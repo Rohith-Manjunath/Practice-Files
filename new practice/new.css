@@ -1,0 +1,36 @@
+img{
+    animation:invert 2s infinite ease-in-out;
+    border-radius: 50%;
+}
+
+@keyframes invert{
+    0%{
+    }
+    25%{
+        transform: rotate(90deg);
+        filter:grayscale(25%);
+        
+    }
+    50%{
+        transform: rotate(180deg);
+        filter:grayscale(50%);
+        
+    }
+    75%{
+        transform: rotate(270deg);
+        filter:grayscale(75%);
+
+    }
+
+    100%{
+        filter:grayscale(100%);
+        transform: rotate(360deg);
+        filter:grayscale(100%);
+
+
+    }
+}
+
+body{
+    background-color: black;
+}
